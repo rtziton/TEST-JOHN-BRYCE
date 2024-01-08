@@ -1,0 +1,12 @@
+import os
+
+# create the order for the new folder
+folder_path = 'tools'
+
+# Checking if the folder already exists
+if not os.path.exists(folder_path):
+    # if no Create new folder
+    os.makedirs(folder_path)
+    print(f'The folder "{folder_path}" has been created.')
+else:
+    print(f'The folder "{folder_path}" already exists.')
